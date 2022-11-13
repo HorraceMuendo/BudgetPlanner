@@ -11,16 +11,13 @@ public class Rule1 {
 //    private double sum = 0;
 
 
-
-
-    public void income(){
-        System.out.println("enter your income: "+ income);
+    public void income() {
+        System.out.println("enter your income: " + income);
     }
 
-        Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
-        public double income = scanner.nextDouble();
-
+    public double income = scanner.nextDouble();
 
 
     public double expense() {
@@ -38,7 +35,7 @@ public class Rule1 {
         double value3 = scanner.nextDouble();
 
         System.out.print("Food: ");
-       // Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
         double value4 = scanner.nextDouble();
 
         System.out.print("Transport: ");
@@ -49,13 +46,13 @@ public class Rule1 {
         //Scanner scanner = new Scanner(System.in);
         double value6 = scanner.nextDouble();
 
-         double sum = value1+value2+value3+value4+value5+value6;
+        double sum = value1 + value2 + value3 + value4 + value5 + value6;
 
 
-        double percentage=income*0.3;
+        double percentage = income * 0.5;
 
-         double Expense=percentage-sum;
-        System.out.println("Your expense"+Expense);
+        double Expense = percentage - sum;
+        System.out.println("Your expense" + Expense);
 
 //        ArrayList<Double> expense = new ArrayList<Double>();
 //        expense.add(value);
@@ -65,8 +62,9 @@ public class Rule1 {
 
         return Expense;
     }
+
     public double wants() {
-        System.out.print("Enter your wants: \n want_1");
+        System.out.print("Enter your wants: \n want_1: ");
         Scanner scanner = new Scanner(System.in);
         double value1 = scanner.nextDouble();
 
@@ -79,31 +77,31 @@ public class Rule1 {
         double value3 = scanner.nextDouble();
 
         System.out.print("want_4: ");
-       // Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
         double value4 = scanner.nextDouble();
 
         System.out.print("Other wants: ");
         //Scanner scanner = new Scanner(System.in);
         double value5 = scanner.nextDouble();
 
-        double sum = value1+value2+value3+value4+value5;
+        double sum = value1 + value2 + value3 + value4 + value5;
 
-        double percentage=income*0.2;
+        double percentage = income * 0.3;
 
-        double Want=percentage-sum;
-        System.out.println("Your total wants: "+ Want);
+        double Want = percentage - sum;
+        System.out.println("Your total wants: " + Want);
 
 
 //        ArrayList<Double> human_wants = new ArrayList<Double>();
 //        human_wants.add(value1);
 
-           return Want;
+        return Want;
     }
 
     public double savings_Debt() {
 
         System.out.print("Enter your savings: ");
-       // Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
         double value1 = scanner.nextDouble();
 
         System.out.print("Enter your donation: ");
@@ -118,15 +116,14 @@ public class Rule1 {
         // Scanner scanner = new Scanner(System.in);
         double value4 = scanner.nextDouble();
 
-        double sum = value2+value3+value4;
+        double sum = value2 + value3 + value4;
 
-        double percentage=income*0.2;
+        double percentage = income * 0.2;
 
-        double Savings=percentage-sum;
-        System.out.println("Your net savings: "+Savings);
+        double Savings = percentage - sum;
+        System.out.println("Your net savings: " + Savings);
 
-        return  Savings;
-
+        return Savings;
 
 
 //        ArrayList<Double> savings_debt = new ArrayList<Double>();
