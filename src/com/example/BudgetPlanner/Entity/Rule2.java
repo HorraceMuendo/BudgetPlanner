@@ -7,31 +7,25 @@ public class Rule2 {
 
     // 70/20/10 rule
 
-    double sum = 0;
-    int end = 0;
+    double sum = 0.0;
     Scanner scanner = new Scanner(System.in);
 
     public double income = scanner.nextDouble();
 
-    public ArrayList<Double> bills_MonthlySpending() {
+    public double bills_MonthlySpending() {
         ArrayList<Double> expense = new ArrayList<Double>();
-        double value = scanner.nextDouble();
-        double bills = income * 0.2; //700
-
+        double bills = income * 0.7; //700 --> 490
 
         do {
-            if (sum <= bills) {
-                expense.add(value);
-            }
-
+            double value = scanner.nextDouble();
+            expense.add(value);
             for (int i = 0; i < expense.size(); i++) {
-                sum += expense.get(i);
+                sum =sum + expense.get(i);
+//                System.out.println(expense.get(i));
+                System.out.println(sum);
             }
-            sum++;
         } while (sum <= bills);
-
-
-        return expense;
+        return sum;
     }
 
 }

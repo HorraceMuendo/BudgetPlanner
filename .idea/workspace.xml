@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f7c912c8-d6e0-46df-b6e9-d30d90b6c2cb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/BudgetPlanner/Entity/Rule2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/BudgetPlanner/Entity/Rule2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/BudgetPlanner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/BudgetPlanner/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,5 +87,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
