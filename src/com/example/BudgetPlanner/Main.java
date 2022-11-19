@@ -15,6 +15,13 @@ public class Main {
 
         Rule2 rule2 = new Rule2();
             rule2.bills_MonthlySpending();
+            rule2.Savings_Investments();
+            rule2.Debt_Donation();
+
+
+
+
+
 
 
 
