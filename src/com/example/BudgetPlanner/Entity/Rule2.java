@@ -12,17 +12,17 @@ public class Rule2 {
 
     public double income = scanner.nextDouble();
 
-    
+
     public double bills_MonthlySpending() {
-        ArrayList<Double> expense = new ArrayList<Double>();
+        ArrayList<Double> Monthly_expense = new ArrayList<Double>();
         double bills = income * 0.7; //700 --> 490
 
         do {
             double value = scanner.nextDouble();
-            expense.add(value);
+            Monthly_expense.add(value);
             sum = 0.0;
-            for (int i = 0; i <= expense.size() - 1; i++) {
-                sum += expense.get(i);
+            for (int i = 0; i <= Monthly_expense.size() - 1; i++) {
+                sum += Monthly_expense.get(i);
             }
 
         } while (sum <= bills);
@@ -38,45 +38,40 @@ public class Rule2 {
     }
 
     public double Savings_Investments() {
-        ArrayList<Double> expense = new ArrayList<Double>();
+        ArrayList<Double> Savings_expense = new ArrayList<Double>();
         double bills = income * 0.2;
 
         do {
             double value = scanner.nextDouble();
-            expense.add(value);
+            Savings_expense.add(value);
             sum = 0.0;
-            for (int i = 0; i <= expense.size() - 1; i++) {
-                sum += expense.get(i);
+            for (int i = 0; i <= Savings_expense.size() - 1; i++) {
+                sum += Savings_expense.get(i);
             }
+
         } while (sum <= bills);
 
-        if (sum > bills) {
-            double exceededby = sum - bills;
-            System.out.println("Your bills exceed by: " + exceededby);
-        } else {
-            System.out.println("your monthly spending's: " + sum);
-            scanner.close();
-        }
+        System.out.println("Your monthly Savings: " + sum );
 
         return sum;
     }
 
     public double Debt_Donation() {
-        ArrayList<Double> expense = new ArrayList<Double>();
+        ArrayList<Double> Debt_expense = new ArrayList<Double>();
         double bills = income * 0.1;
 
         do {
             double value = scanner.nextDouble();
-            expense.add(value);
+            Debt_expense.add(value);
             sum = 0.0;
-            for (int i = 0; i <= expense.size() - 1; i++) {
-                sum += expense.get(i);
+            for (int i = 0; i <= Debt_expense.size() - 1; i++) {
+                sum += Debt_expense.get(i);
             }
         } while (sum <= bills);
 
         if (sum > bills) {
             double exceededby = sum - bills;
-            System.out.println("Your bills exceed by: " + exceededby);
+            System.out.println("Your Debt exceed by: " + exceededby);
         } else {
             System.out.println("your monthly spending's: " + sum);
             scanner.close();
