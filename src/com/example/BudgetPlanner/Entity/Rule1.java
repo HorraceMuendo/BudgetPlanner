@@ -4,11 +4,15 @@ import java.util.Scanner;
 
 public class Rule1 {
 
+    // 50/30/20
+
     public void income() {
         System.out.println("enter your income: " + income);
     }
+
     Scanner scanner = new Scanner(System.in);
     public double income = scanner.nextDouble();
+
     public double expense() {
 
         System.out.print("Enter your expenses \n Health: ");

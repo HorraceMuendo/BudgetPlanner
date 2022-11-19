@@ -51,7 +51,7 @@ public class Rule2 {
 
         } while (sum <= bills);
 
-        System.out.println("Your monthly Savings: " + sum );
+        System.out.println("Your monthly Savings: " + sum);
 
         return sum;
     }
